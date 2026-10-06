@@ -1,0 +1,933 @@
+{
+  "parts": [
+    {
+      "name": "unified flat reading leaf -1",
+      "original": {
+        "volume_mm3": 42845.872987835115,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 42845.872987835115,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN lower tray -1",
+      "original": {
+        "volume_mm3": 29577.545978559232,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 29577.545978559232,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN low rounded retention lip -1",
+      "original": {
+        "volume_mm3": 7227.050906048151,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 7227.050906048151,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN tray soft liner -1",
+      "original": {
+        "volume_mm3": 3897.1128657862428,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 3897.1128657862428,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge web -1",
+      "original": {
+        "volume_mm3": 15651.901828553282,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 15651.901828553282,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "unified flat reading leaf 1",
+      "original": {
+        "volume_mm3": 42845.879113990646,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 42845.879113990646,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN lower tray 1",
+      "original": {
+        "volume_mm3": 29577.54595211512,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 29577.54595211512,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN low rounded retention lip 1",
+      "original": {
+        "volume_mm3": 7227.050895490787,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 7227.050895490787,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN tray soft liner 1",
+      "original": {
+        "volume_mm3": 3897.112784569028,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 3897.112784569028,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge web 1",
+      "original": {
+        "volume_mm3": 15651.901787640962,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 15651.901787640962,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.04 -1",
+      "original": {
+        "volume_mm3": 5887.033944553553,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.033944553553,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.04 1",
+      "original": {
+        "volume_mm3": 5887.033936615367,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.033936615367,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.122 -1",
+      "original": {
+        "volume_mm3": 5887.032498450377,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.032498450377,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.122 1",
+      "original": {
+        "volume_mm3": 5887.032490514089,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.032490514089,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.209 -1",
+      "original": {
+        "volume_mm3": 5887.081035821232,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.081035821232,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear hinge strap 0.209 1",
+      "original": {
+        "volume_mm3": 5887.081027881993,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 5887.081027881993,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "unified fixed organic bookend",
+      "original": {
+        "volume_mm3": 76250.36475931852,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 76250.36475931852,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "unified common structural base",
+      "original": {
+        "volume_mm3": 360756.9141249902,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 341760.3653377751,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 18996.548787215084,
+      "change": [
+        "Underside pockets z0..5.5 derived from original xy footprint with 2.5 mm inward offset; fixed root, edge rails, and post mounts retained"
+      ]
+    },
+    {
+      "name": "hollow anti rotation sleeve 0.012",
+      "original": {
+        "volume_mm3": 31233.70535394711,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 17774.300244816135,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 13459.405109130974,
+      "change": [
+        "True open 9.2 x 9.2 mm bore through 14 x 14 mm sleeve; 2.4 mm nominal wall; original transverse hole retained"
+      ]
+    },
+    {
+      "name": "upper pivot saddle 0.012",
+      "original": {
+        "volume_mm3": 9405.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9405.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "anti slip base pad 0.012 -0.064",
+      "original": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "anti slip base pad 0.012 0.121",
+      "original": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "hollow anti rotation sleeve 0.178",
+      "original": {
+        "volume_mm3": 31233.70535394708,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 17774.28280475015,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 13459.42254919693,
+      "change": [
+        "True open 9.2 x 9.2 mm bore through 14 x 14 mm sleeve; 2.4 mm nominal wall; original transverse hole retained"
+      ]
+    },
+    {
+      "name": "upper pivot saddle 0.178",
+      "original": {
+        "volume_mm3": 9405.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9405.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "anti slip base pad 0.178 -0.064",
+      "original": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "anti slip base pad 0.178 0.121",
+      "original": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1296.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "moving upper transverse bridge",
+      "original": {
+        "volume_mm3": 47376.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 21966.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 25410.0,
+      "change": [
+        "18 x 14 mm bridge outer section, 1.5 mm walls; void x18..172 preserves solid post mounts and ends"
+      ]
+    },
+    {
+      "name": "opposite sliding organic bookend",
+      "original": {
+        "volume_mm3": 87061.54374726182,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 87061.54374726182,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "guide lower web -0.068",
+      "original": {
+        "volume_mm3": 10680.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 10680.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "guide T flange -0.068",
+      "original": {
+        "volume_mm3": 9967.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9967.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "sliding shoe roof -0.068",
+      "original": {
+        "volume_mm3": 3220.000000000002,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 3220.000000000002,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "captured shoe side -0.068 -1",
+      "original": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "shoe anti lift lip -0.068 -1",
+      "original": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "captured shoe side -0.068 1",
+      "original": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "shoe anti lift lip -0.068 1",
+      "original": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "guide lower web 0.124",
+      "original": {
+        "volume_mm3": 10680.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 10680.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "guide T flange 0.124",
+      "original": {
+        "volume_mm3": 9967.999999999993,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9967.999999999993,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "sliding shoe roof 0.124",
+      "original": {
+        "volume_mm3": 3220.000000000001,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 3220.000000000001,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "captured shoe side 0.124 -1",
+      "original": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "shoe anti lift lip 0.124 -1",
+      "original": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "captured shoe side 0.124 1",
+      "original": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1344.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "shoe anti lift lip 0.124 1",
+      "original": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 504.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "moving cross rail carriage",
+      "original": {
+        "volume_mm3": 25920.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 25920.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "rail bearing pad -0.068",
+      "original": {
+        "volume_mm3": 468.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 468.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "rail bearing pad 0.124",
+      "original": {
+        "volume_mm3": 468.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 468.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "clean inner height post 0.012",
+      "original": {
+        "volume_mm3": 12141.500847462747,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 6021.500847462743,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 6120.000000000004,
+      "change": [
+        "8 x 8 x 1 mm square hollow section; 10 mm solid end plugs; length 190 mm"
+      ]
+    },
+    {
+      "name": "spring applied brake cap 0.012",
+      "original": {
+        "volume_mm3": 9171.751093714418,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9171.751093714418,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush brake side insert 0.012",
+      "original": {
+        "volume_mm3": 75.46224405351222,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 75.46224405351222,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "clean inner height post 0.178",
+      "original": {
+        "volume_mm3": 12141.500351844275,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 6021.500351844239,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 6120.000000000036,
+      "change": [
+        "8 x 8 x 1 mm square hollow section; 10 mm solid end plugs; length 190 mm"
+      ]
+    },
+    {
+      "name": "spring applied brake cap 0.178",
+      "original": {
+        "volume_mm3": 9171.751385758158,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 9171.751385758158,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush brake side insert 0.178",
+      "original": {
+        "volume_mm3": 75.46222134091704,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 75.46222134091704,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "single uninterrupted book support deck",
+      "original": {
+        "volume_mm3": 202573.15504997334,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 63283.96428459248,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 139289.19076538086,
+      "change": [
+        "Top z23 retained: 2 mm skin z21..23, 2 mm perimeter, three 2 mm ribs along x at y=-12.7143,28,68.7143; rib pitch 40.7143 mm"
+      ]
+    },
+    {
+      "name": "continuous smooth book contact surface",
+      "original": {
+        "volume_mm3": 24867.165188219013,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 24867.165188219013,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "smooth fixed root facing",
+      "original": {
+        "volume_mm3": 7560.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 7560.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "smooth sliding root facing",
+      "original": {
+        "volume_mm3": 7560.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 7560.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush seam lip -0.068 -1",
+      "original": {
+        "volume_mm3": 11222.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 11222.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush seam lip -0.068 1",
+      "original": {
+        "volume_mm3": 11222.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 11222.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "concealed slider neck -0.068",
+      "original": {
+        "volume_mm3": 123.19946289062509,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 123.19946289062509,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "internal travel stop -0.068",
+      "original": {
+        "volume_mm3": 1280.0,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1280.0,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush seam lip 0.124 -1",
+      "original": {
+        "volume_mm3": 11221.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 11221.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "flush seam lip 0.124 1",
+      "original": {
+        "volume_mm3": 11221.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 11221.999999999996,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "concealed slider neck 0.124",
+      "original": {
+        "volume_mm3": 123.19946289062531,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 123.19946289062531,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "internal travel stop 0.124",
+      "original": {
+        "volume_mm3": 1279.9999999999964,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 1279.9999999999964,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "recessed front release pad",
+      "original": {
+        "volume_mm3": 519.9999999999989,
+        "nonmanifold_edges": 0
+      },
+      "proposed": {
+        "volume_mm3": 519.9999999999989,
+        "nonmanifold_edges": 0
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear recessed axle -1",
+      "original": {
+        "volume_mm3": 1202.7820906036018,
+        "nonmanifold_edges": 56
+      },
+      "proposed": {
+        "volume_mm3": 1202.7820906036018,
+        "nonmanifold_edges": 56
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN rear recessed axle 1",
+      "original": {
+        "volume_mm3": 1202.7820906036047,
+        "nonmanifold_edges": 56
+      },
+      "proposed": {
+        "volume_mm3": 1202.7820906036047,
+        "nonmanifold_edges": 56
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN recessed spine hinge 0.04",
+      "original": {
+        "volume_mm3": 1166.2886449879054,
+        "nonmanifold_edges": 56
+      },
+      "proposed": {
+        "volume_mm3": 1166.2886449879054,
+        "nonmanifold_edges": 56
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN recessed spine hinge 0.122",
+      "original": {
+        "volume_mm3": 1166.292452209521,
+        "nonmanifold_edges": 56
+      },
+      "proposed": {
+        "volume_mm3": 1166.292452209521,
+        "nonmanifold_edges": 56
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    },
+    {
+      "name": "OPEN recessed spine hinge 0.209",
+      "original": {
+        "volume_mm3": 1166.2964354175588,
+        "nonmanifold_edges": 56
+      },
+      "proposed": {
+        "volume_mm3": 1166.2964354175588,
+        "nonmanifold_edges": 56
+      },
+      "removed_volume_mm3": 0.0,
+      "change": []
+    }
+  ],
+  "original_mesh_volume_mm3": 1313068.0923958598,
+  "proposed_mesh_volume_mm3": 1090213.525184936,
+  "base_pockets": {
+    "base_projected_area_mm2": 49823.54359603742,
+    "high_base_projected_area_mm2": 28998.368430710227,
+    "pocket_count": 6,
+    "pocket_projected_area_mm2": 8607.837759221338,
+    "cut_depth_z_mm": [
+      -1,
+      5.5
+    ],
+    "min_roof_mm": 2.5,
+    "roof_note": "Cutter only inside 2.5 mm inward offset of projected base geometry at or above z8 mm, leaving >=2.5 mm roof above z5.5 cavity."
+  },
+  "volume_note": "Triangle-integral mesh volumes, not net union; overlapping assemblies/material identity not resolved.",
+  "removed_volume_mm3": 222854.56721092388,
+  "all_aluminum_equivalent_mass_g": 2943.5765179993273,
+  "original_all_aluminum_equivalent_mass_g": 3545.2838494688217
+}

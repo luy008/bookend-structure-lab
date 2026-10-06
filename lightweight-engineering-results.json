@@ -1,0 +1,1820 @@
+{
+  "constants": {
+    "E": 68300,
+    "nu": 0.33,
+    "density": 2700,
+    "yieldMPa": 240,
+    "g": 9.81,
+    "loadFactor": 2,
+    "heavyShare": 0.7,
+    "extraMovingMassKg": 0.1,
+    "serviceDeflectionLimitMm": 0.5,
+    "pivotY": 32.8236436,
+    "pivotZ": 236.9137704,
+    "postY": 34,
+    "postOuter": 8,
+    "postWall": 1,
+    "postFreeLength": 68,
+    "postFullLength": 190,
+    "postLightArea": 27.90998,
+    "postLightI": 231.94482,
+    "bridgeWidth": 18,
+    "bridgeHeight": 14,
+    "bridgeWall": 1.5,
+    "bridgeLength": 188,
+    "bridgeClearSpan": 166,
+    "bridgeSolidLength": 34,
+    "deckLength": 152,
+    "deckWidth": 166.8572,
+    "deckSkin": 2,
+    "deckRibWall": 2,
+    "deckRibDepth": 6,
+    "deckPitch": 40.7143,
+    "deckFreeBay": 39.2143,
+    "skinLoadStrip": 20,
+    "groundFront": -75,
+    "groundBack": 131
+  },
+  "light": {
+    "angleStepDegrees": 0.01,
+    "cases": [
+      {
+        "bookMass": 3,
+        "thickness": 25,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 60.52332494649056,
+            "angle": 30.18
+          },
+          "postDeflection": {
+            "value": 0.24810704349037235,
+            "angle": 30.18
+          },
+          "bridgeStress": {
+            "value": 16.2592542622173,
+            "angle": 30.18
+          },
+          "bridgeDeflection": {
+            "value": 0.02141163034962557,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 3.339863809547208,
+            "angle": 30.18
+          },
+          "verticalLock": {
+            "value": 52.68417612420012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 3,
+            "angle": 30.18,
+            "thickness": 25,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 3.836040201266938,
+            "serviceVerticalN": 37.63155437442866,
+            "designVerticalN": 75.26310874885732,
+            "totalServiceMomentNmm": 2428.6146218451436,
+            "totalDesignMomentNmm": 4857.229243690287,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 30.26166247324528,
+            "designStress": 60.52332494649056,
+            "serviceDeflection": 0.24810704349037235,
+            "designDeflection": 0.4962140869807447,
+            "yieldMargin": 3.9654133379517242,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 26.34208806210006,
+            "designAxialN": 52.68417612420012,
+            "momentNmm": 1700.0302352916003,
+            "designMomentNmm": 3400.0604705832006,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 1.936994868080113,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 8.12962713110865,
+            "designStress": 16.2592542622173,
+            "serviceDeflection": 0.02141163034962557,
+            "designDeflection": 0.04282326069925114,
+            "yieldMargin": 14.760824582078392,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 4.457933141307585,
+            "designBendingStress": 8.91586628261517,
+            "serviceTorsionShear": 3.9250337322749793,
+            "designTorsionShear": 7.850067464549959,
+            "serviceTwistDegrees": 0.2044273917344625,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 32.373217577922716,
+              "designStress": 64.74643515584543,
+              "serviceDeflection": 0.1416736380106245,
+              "designDeflection": 0.283347276021249,
+              "yieldMargin": 3.706767784547785,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 21.65421492532566,
+              "designStress": 43.30842985065132,
+              "serviceDeflection": 0.04063553705283728,
+              "designDeflection": 0.08127107410567457,
+              "yieldMargin": 5.541646299060888,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 29.43
+          },
+          "joints": {
+            "requiredVerticalLockN": 52.68417612420012,
+            "requiredAngleLockNm": 3.339863809547208,
+            "requiredTotalAngleLockNm": 4.771234013638869,
+            "sleeveContactCoupleN": 27.869348119534433,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.60710239285919,
+            "bookComZ": 241.0986774193751,
+            "bookOnlyFrontMarginMm": 46.39289760714081,
+            "bookOnlyBackMarginMm": 159.6071023928592,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 4,
+        "thickness": 25,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 75.8506619810305,
+            "angle": 30.97
+          },
+          "postDeflection": {
+            "value": 0.31087993796083074,
+            "angle": 30.97
+          },
+          "bridgeStress": {
+            "value": 20.41058382753742,
+            "angle": 30.97
+          },
+          "bridgeDeflection": {
+            "value": 0.026993331590022863,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 4.183947867871625,
+            "angle": 30.97
+          },
+          "verticalLock": {
+            "value": 66.41817612420012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 4,
+            "angle": 30.97,
+            "thickness": 25,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 4.836040201266937,
+            "serviceVerticalN": 47.441554374428655,
+            "designVerticalN": 94.88310874885731,
+            "totalServiceMomentNmm": 3043.0718626465846,
+            "totalDesignMomentNmm": 6086.143725293169,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 37.92533099051525,
+            "designStress": 75.8506619810305,
+            "serviceDeflection": 0.31087993796083074,
+            "designDeflection": 0.6217598759216615,
+            "yieldMargin": 3.164112134710461,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 33.20908806210006,
+            "designAxialN": 66.41817612420012,
+            "momentNmm": 2130.150303852609,
+            "designMomentNmm": 4260.300607705218,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 2.4270687198066585,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 10.20529191376871,
+            "designStress": 20.41058382753742,
+            "serviceDeflection": 0.026993331590022863,
+            "designDeflection": 0.053986663180045726,
+            "yieldMargin": 11.758605340636967,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 5.620051603943939,
+            "designBendingStress": 11.240103207887879,
+            "serviceTorsionShear": 4.9180959396308435,
+            "designTorsionShear": 9.836191879261687,
+            "serviceTwistDegrees": 0.2561490152228195,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 42.86400064204075,
+              "designStress": 85.7280012840815,
+              "serviceDeflection": 0.1872668518297198,
+              "designDeflection": 0.3745337036594396,
+              "yieldMargin": 2.799552029735291,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 28.867195231575664,
+              "designStress": 57.73439046315133,
+              "serviceDeflection": 0.05416877539990816,
+              "designDeflection": 0.10833755079981632,
+              "yieldMargin": 4.156967763488882,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 39.24
+          },
+          "joints": {
+            "requiredVerticalLockN": 66.41817612420012,
+            "requiredAngleLockNm": 4.183947867871625,
+            "requiredTotalAngleLockNm": 5.9770683826737505,
+            "sleeveContactCoupleN": 34.920496784468995,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.658963225373483,
+            "bookComZ": 240.2512931274939,
+            "bookOnlyFrontMarginMm": 46.34103677462652,
+            "bookOnlyBackMarginMm": 159.6589632253735,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 5,
+        "thickness": 25,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 91.18704717953852,
+            "angle": 31.49
+          },
+          "postDeflection": {
+            "value": 0.3736911182202608,
+            "angle": 31.49
+          },
+          "bridgeStress": {
+            "value": 24.56376887892637,
+            "angle": 31.49
+          },
+          "bridgeDeflection": {
+            "value": 0.03257503283042017,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 5.028556594886769,
+            "angle": 31.49
+          },
+          "verticalLock": {
+            "value": 80.15217612420011,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 5,
+            "angle": 31.49,
+            "thickness": 25,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 5.836040201266937,
+            "serviceVerticalN": 57.25155437442866,
+            "designVerticalN": 114.50310874885731,
+            "totalServiceMomentNmm": 3657.903866798544,
+            "totalDesignMomentNmm": 7315.807733597088,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 45.59352358976926,
+            "designStress": 91.18704717953852,
+            "serviceDeflection": 0.3736911182202608,
+            "designDeflection": 0.7473822364405216,
+            "yieldMargin": 2.631952754511977,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 40.076088062100055,
+            "designAxialN": 80.15217612420011,
+            "momentNmm": 2560.5327067589806,
+            "designMomentNmm": 5121.065413517961,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 2.9174414722645796,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 12.281884439463186,
+            "designStress": 24.56376887892637,
+            "serviceDeflection": 0.03257503283042017,
+            "designDeflection": 0.06515006566084033,
+            "yieldMargin": 9.770487630906658,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 6.782170066580294,
+            "designBendingStress": 13.564340133160588,
+            "serviceTorsionShear": 5.91176382512896,
+            "designTorsionShear": 11.82352765025792,
+            "serviceTwistDegrees": 0.30790218422423377,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 53.35478370615878,
+              "designStress": 106.70956741231755,
+              "serviceDeflection": 0.23286006564881506,
+              "designDeflection": 0.4657201312976301,
+              "yieldMargin": 2.2490954262110208,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 36.08017553782567,
+              "designStress": 72.16035107565133,
+              "serviceDeflection": 0.06770201374697903,
+              "designDeflection": 0.13540402749395805,
+              "yieldMargin": 3.3259261689066513,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 49.050000000000004
+          },
+          "joints": {
+            "requiredVerticalLockN": 80.15217612420011,
+            "requiredAngleLockNm": 5.028556594886769,
+            "requiredTotalAngleLockNm": 7.18365227840967,
+            "sleeveContactCoupleN": 41.97594601244231,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.686721105766182,
+            "bookComZ": 239.69316489586308,
+            "bookOnlyFrontMarginMm": 46.31327889423382,
+            "bookOnlyBackMarginMm": 159.6867211057662,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 3,
+        "thickness": 50,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 65.64099938613985,
+            "angle": 37.45
+          },
+          "postDeflection": {
+            "value": 0.2697616249407186,
+            "angle": 37.45
+          },
+          "bridgeStress": {
+            "value": 17.263903267145682,
+            "angle": 37.45
+          },
+          "bridgeDeflection": {
+            "value": 0.02141163034962557,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 3.6366183287279723,
+            "angle": 37.45
+          },
+          "verticalLock": {
+            "value": 52.68417612420012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 3,
+            "angle": 37.45,
+            "thickness": 50,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 3.836040201266938,
+            "serviceVerticalN": 37.63155437442866,
+            "designVerticalN": 75.26310874885732,
+            "totalServiceMomentNmm": 2640.5821355456897,
+            "totalDesignMomentNmm": 5281.164271091379,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 32.82049969306993,
+            "designStress": 65.64099938613985,
+            "serviceDeflection": 0.2697616249407186,
+            "designDeflection": 0.5395232498814372,
+            "yieldMargin": 3.656251462415671,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 26.34208806210006,
+            "designAxialN": 52.68417612420012,
+            "momentNmm": 1848.4074948819825,
+            "designMomentNmm": 3696.814989763965,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 2.1060542085553506,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 8.631951633572841,
+            "designStress": 17.263903267145682,
+            "serviceDeflection": 0.02141163034962557,
+            "designDeflection": 0.04282326069925114,
+            "yieldMargin": 13.901838783859235,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 4.457933141307585,
+            "designBendingStress": 8.91586628261517,
+            "serviceTorsionShear": 4.267607491791013,
+            "designTorsionShear": 8.535214983582026,
+            "serviceTwistDegrees": 0.2222696486197151,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 32.373217577922716,
+              "designStress": 64.74643515584543,
+              "serviceDeflection": 0.1416736380106245,
+              "designDeflection": 0.283347276021249,
+              "yieldMargin": 3.706767784547785,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 21.65421492532566,
+              "designStress": 43.30842985065132,
+              "serviceDeflection": 0.04063553705283728,
+              "designDeflection": 0.08127107410567457,
+              "yieldMargin": 5.541646299060888,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 29.43
+          },
+          "joints": {
+            "requiredVerticalLockN": 52.68417612420012,
+            "requiredAngleLockNm": 3.6366183287279723,
+            "requiredTotalAngleLockNm": 5.195169041039961,
+            "sleeveContactCoupleN": 30.30176221118004,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.24369151517193,
+            "bookComZ": 243.2148195260217,
+            "bookOnlyFrontMarginMm": 38.75630848482807,
+            "bookOnlyBackMarginMm": 167.24369151517192,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 4,
+        "thickness": 50,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 82.7842814279642,
+            "angle": 38.53
+          },
+          "postDeflection": {
+            "value": 0.3402183862794813,
+            "angle": 38.53
+          },
+          "bridgeStress": {
+            "value": 21.770632543830605,
+            "angle": 38.53
+          },
+          "bridgeDeflection": {
+            "value": 0.026993331590022863,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 4.5860021465135095,
+            "angle": 38.53
+          },
+          "verticalLock": {
+            "value": 66.41817612420012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 4,
+            "angle": 38.53,
+            "thickness": 50,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 4.836040201266937,
+            "serviceVerticalN": 47.441554374428655,
+            "designVerticalN": 94.88310874885731,
+            "totalServiceMomentNmm": 3330.25349024793,
+            "totalDesignMomentNmm": 6660.50698049586,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 41.3921407139821,
+            "designStress": 82.7842814279642,
+            "serviceDeflection": 0.3402183862794813,
+            "designDeflection": 0.6804367725589626,
+            "yieldMargin": 2.899101083686268,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 33.20908806210006,
+            "designAxialN": 66.41817612420012,
+            "momentNmm": 2331.1774431735507,
+            "designMomentNmm": 4662.3548863471015,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 2.6561167267926633,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 10.885316271915302,
+            "designStress": 21.770632543830605,
+            "serviceDeflection": 0.026993331590022863,
+            "designDeflection": 0.053986663180045726,
+            "yieldMargin": 11.02402511809477,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 5.620051603943939,
+            "designBendingStress": 11.240103207887879,
+            "serviceTorsionShear": 5.382227863026958,
+            "designTorsionShear": 10.764455726053916,
+            "serviceTwistDegrees": 0.28032238161719525,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 42.86400064204075,
+              "designStress": 85.7280012840815,
+              "serviceDeflection": 0.1872668518297198,
+              "designDeflection": 0.3745337036594396,
+              "yieldMargin": 2.799552029735291,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 28.867195231575664,
+              "designStress": 57.73439046315133,
+              "serviceDeflection": 0.05416877539990816,
+              "designDeflection": 0.10833755079981632,
+              "yieldMargin": 4.156967763488882,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 39.24
+          },
+          "joints": {
+            "requiredVerticalLockN": 66.41817612420012,
+            "requiredAngleLockNm": 4.5860021465135095,
+            "requiredTotalAngleLockNm": 6.551431637876442,
+            "sleeveContactCoupleN": 38.2160236585828,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.3501868121205,
+            "bookComZ": 241.91188865742382,
+            "bookOnlyFrontMarginMm": 38.6498131878795,
+            "bookOnlyBackMarginMm": 167.3501868121205,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 5,
+        "thickness": 50,
+        "variant": "light",
+        "max": {
+          "postStress": {
+            "value": 99.946085834677,
+            "angle": 39.24
+          },
+          "postDeflection": {
+            "value": 0.41075352190012937,
+            "angle": 39.24
+          },
+          "bridgeStress": {
+            "value": 26.281040925811368,
+            "angle": 39.24
+          },
+          "bridgeDeflection": {
+            "value": 0.03257503283042017,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 5.5364600059465525,
+            "angle": 39.24
+          },
+          "verticalLock": {
+            "value": 80.15217612420011,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 5,
+            "angle": 39.24,
+            "thickness": 50,
+            "variant": "light",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.7360402012669376,
+            "totalStandMassKg": 5.836040201266937,
+            "serviceVerticalN": 57.25155437442866,
+            "designVerticalN": 114.50310874885731,
+            "totalServiceMomentNmm": 4020.6920175555333,
+            "totalDesignMomentNmm": 8041.384035111067,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 49.9730429173385,
+            "designStress": 99.946085834677,
+            "serviceDeflection": 0.41075352190012937,
+            "designDeflection": 0.8215070438002587,
+            "yieldMargin": 2.4012946379610023,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 40.076088062100055,
+            "designAxialN": 80.15217612420011,
+            "momentNmm": 2814.484412288873,
+            "designMomentNmm": 5628.968824577746,
+            "A": 27.90998,
+            "I": 231.94482,
+            "Z": 57.986205,
+            "eulerLoadN": 8453.32001470871,
+            "unrestrained190mmDeflection": 3.20679112037082,
+            "metalMassKg": 0.03253336164
+          },
+          "bridge": {
+            "serviceStress": 13.140520462905684,
+            "designStress": 26.281040925811368,
+            "serviceDeflection": 0.03257503283042017,
+            "designDeflection": 0.06515006566084033,
+            "yieldMargin": 9.132058379175122,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 6.782170066580294,
+            "designBendingStress": 13.564340133160588,
+            "serviceTorsionShear": 6.49808810918066,
+            "designTorsionShear": 12.99617621836132,
+            "serviceTwistDegrees": 0.33843969097574716,
+            "I": 2452.25,
+            "Z": 350.32142857142856,
+            "J": 4400.5926724137935,
+            "metalMassKg": 0.0593082
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 53.35478370615878,
+              "designStress": 106.70956741231755,
+              "serviceDeflection": 0.23286006564881506,
+              "designDeflection": 0.4657201312976301,
+              "yieldMargin": 2.2490954262110208,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 230.48232374940153,
+              "Z": 35.53404905254707,
+              "centroidFromBottom": 6.486238689223643,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 36.08017553782567,
+              "designStress": 72.16035107565133,
+              "serviceDeflection": 0.06770201374697903,
+              "designDeflection": 0.13540402749395805,
+              "yieldMargin": 3.3259261689066513,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 13.333333333333334,
+              "Z": 13.333333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.17174473632000006,
+            "serviceBookLoadN": 49.050000000000004
+          },
+          "joints": {
+            "requiredVerticalLockN": 80.15217612420011,
+            "requiredAngleLockNm": 5.5364600059465525,
+            "requiredTotalAngleLockNm": 7.9092285799236475,
+            "sleeveContactCoupleN": 46.1390887260471,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.406810080052274,
+            "bookComZ": 241.05433597177114,
+            "bookOnlyFrontMarginMm": 38.593189919947726,
+            "bookOnlyBackMarginMm": 167.40681008005228,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      }
+    ],
+    "scope": [
+      "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+      "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+      "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+      "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+      "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+      "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+      "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+      "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+    ]
+  },
+  "original": {
+    "angleStepDegrees": 0.01,
+    "cases": [
+      {
+        "bookMass": 3,
+        "thickness": 25,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 40.846297474822485,
+            "angle": 30.18
+          },
+          "postDeflection": {
+            "value": 0.16928377829997993,
+            "angle": 30.18
+          },
+          "bridgeStress": {
+            "value": 11.993179578049691,
+            "angle": 30.18
+          },
+          "bridgeDeflection": {
+            "value": 0.012984874733240379,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 3.339863809547208,
+            "angle": 30.18
+          },
+          "verticalLock": {
+            "value": 53.62642466220012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 3,
+            "angle": 30.18,
+            "thickness": 25,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 3.9046472012669375,
+            "serviceVerticalN": 38.30458904442866,
+            "designVerticalN": 76.60917808885732,
+            "totalServiceMomentNmm": 2428.6146218451436,
+            "totalDesignMomentNmm": 4857.229243690287,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 20.423148737411243,
+            "designStress": 40.846297474822485,
+            "serviceDeflection": 0.16928377829997993,
+            "designDeflection": 0.33856755659995985,
+            "yieldMargin": 5.875685553823701,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 26.81321233110006,
+            "designAxialN": 53.62642466220012,
+            "momentNmm": 1700.0302352916003,
+            "designMomentNmm": 3400.0604705832006,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 1.3216142726274385,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 5.996589789024846,
+            "designStress": 11.993179578049691,
+            "serviceDeflection": 0.012984874733240379,
+            "designDeflection": 0.025969749466480757,
+            "yieldMargin": 20.011373834446356,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 2.703470145142499,
+            "designBendingStress": 5.406940290284998,
+            "serviceTorsionShear": 3.090325671735383,
+            "designTorsionShear": 6.180651343470766,
+            "serviceTwistDegrees": 0.10374176391266914,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 2.8098670579719838,
+              "designStress": 5.6197341159439675,
+              "serviceDeflection": 0.020215667353937615,
+              "designDeflection": 0.04043133470787523,
+              "yieldMargin": 42.70664680008376,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 1.3562523090657908,
+              "designStress": 2.7125046181315815,
+              "serviceDeflection": 0.0006366094232454887,
+              "designDeflection": 0.0012732188464909774,
+              "yieldMargin": 88.4791120338501,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 29.43
+          },
+          "joints": {
+            "requiredVerticalLockN": 53.62642466220012,
+            "requiredAngleLockNm": 3.339863809547208,
+            "requiredTotalAngleLockNm": 4.771234013638869,
+            "sleeveContactCoupleN": 27.869348119534433,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.60710239285919,
+            "bookComZ": 241.0986774193751,
+            "bookOnlyFrontMarginMm": 46.39289760714081,
+            "bookOnlyBackMarginMm": 159.6071023928592,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 4,
+        "thickness": 25,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 51.18330845064996,
+            "angle": 30.97
+          },
+          "postDeflection": {
+            "value": 0.21211381085888012,
+            "angle": 30.97
+          },
+          "bridgeStress": {
+            "value": 15.03510031381444,
+            "angle": 30.97
+          },
+          "bridgeDeflection": {
+            "value": 0.01631036716928612,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 4.183947867871625,
+            "angle": 30.97
+          },
+          "verticalLock": {
+            "value": 67.36042466220012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 4,
+            "angle": 30.97,
+            "thickness": 25,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 4.904647201266937,
+            "serviceVerticalN": 48.114589044428655,
+            "designVerticalN": 96.22917808885731,
+            "totalServiceMomentNmm": 3043.0718626465846,
+            "totalDesignMomentNmm": 6086.143725293169,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 25.59165422532498,
+            "designStress": 51.18330845064996,
+            "serviceDeflection": 0.21211381085888012,
+            "designDeflection": 0.42422762171776024,
+            "yieldMargin": 4.689028655336021,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 33.68021233110006,
+            "designAxialN": 67.36042466220012,
+            "momentNmm": 2130.150303852609,
+            "designMomentNmm": 4260.300607705218,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 1.6559923382364992,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 7.51755015690722,
+            "designStress": 15.03510031381444,
+            "serviceDeflection": 0.01631036716928612,
+            "designDeflection": 0.03262073433857224,
+            "yieldMargin": 15.962647071897816,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 3.3958425941220907,
+            "designBendingStress": 6.791685188244181,
+            "serviceTorsionShear": 3.8722006420794672,
+            "designTorsionShear": 7.7444012841589345,
+            "serviceTwistDegrees": 0.12998918803516038,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 3.6682417567878796,
+              "designStress": 7.336483513575759,
+              "serviceDeflection": 0.026264925846324894,
+              "designDeflection": 0.05252985169264979,
+              "yieldMargin": 32.7132201082294,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 1.8070635782064157,
+              "designStress": 3.6141271564128314,
+              "serviceDeflection": 0.0008480662724184711,
+              "designDeflection": 0.0016961325448369422,
+              "yieldMargin": 66.40607527439897,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 39.24
+          },
+          "joints": {
+            "requiredVerticalLockN": 67.36042466220012,
+            "requiredAngleLockNm": 4.183947867871625,
+            "requiredTotalAngleLockNm": 5.9770683826737505,
+            "sleeveContactCoupleN": 34.920496784468995,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.658963225373483,
+            "bookComZ": 240.2512931274939,
+            "bookOnlyFrontMarginMm": 46.34103677462652,
+            "bookOnlyBackMarginMm": 159.6589632253735,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 5,
+        "thickness": 25,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 61.52649300124438,
+            "angle": 31.49
+          },
+          "postDeflection": {
+            "value": 0.25496996586445153,
+            "angle": 31.49
+          },
+          "bridgeStress": {
+            "value": 18.078504225521293,
+            "angle": 31.49
+          },
+          "bridgeDeflection": {
+            "value": 0.019635859605331863,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 5.028556594886769,
+            "angle": 31.49
+          },
+          "verticalLock": {
+            "value": 81.09442466220011,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 5,
+            "angle": 31.49,
+            "thickness": 25,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 5.904647201266937,
+            "serviceVerticalN": 57.92458904442866,
+            "designVerticalN": 115.84917808885731,
+            "totalServiceMomentNmm": 3657.903866798544,
+            "totalDesignMomentNmm": 7315.807733597088,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 30.76324650062219,
+            "designStress": 61.52649300124438,
+            "serviceDeflection": 0.25496996586445153,
+            "designDeflection": 0.5099399317289031,
+            "yieldMargin": 3.9007586535957115,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 40.547212331100056,
+            "designAxialN": 81.09442466220011,
+            "momentNmm": 2560.5327067589806,
+            "designMomentNmm": 5121.065413517961,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 1.9905743442272275,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 9.039252112760646,
+            "designStress": 18.078504225521293,
+            "serviceDeflection": 0.019635859605331863,
+            "designDeflection": 0.039271719210663726,
+            "yieldMargin": 13.275434571693921,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 4.088215043101683,
+            "designBendingStress": 8.176430086203366,
+            "serviceTorsionShear": 4.6545524854492335,
+            "designTorsionShear": 9.309104970898467,
+            "serviceTwistDegrees": 0.156252620712769,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 4.526616455603775,
+              "designStress": 9.05323291120755,
+              "serviceDeflection": 0.032314184338712165,
+              "designDeflection": 0.06462836867742433,
+              "yieldMargin": 26.509866956243812,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 2.2578748473470407,
+              "designStress": 4.515749694694081,
+              "serviceDeflection": 0.0010595231215914534,
+              "designDeflection": 0.002119046243182907,
+              "yieldMargin": 53.14732131455279,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 49.050000000000004
+          },
+          "joints": {
+            "requiredVerticalLockN": 81.09442466220011,
+            "requiredAngleLockNm": 5.028556594886769,
+            "requiredTotalAngleLockNm": 7.18365227840967,
+            "sleeveContactCoupleN": 41.97594601244231,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -28.686721105766182,
+            "bookComZ": 239.69316489586308,
+            "bookOnlyFrontMarginMm": 46.31327889423382,
+            "bookOnlyBackMarginMm": 159.6867211057662,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 3,
+        "thickness": 50,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 44.3380938102485,
+            "angle": 37.45
+          },
+          "postDeflection": {
+            "value": 0.1840587291189861,
+            "angle": 37.45
+          },
+          "bridgeStress": {
+            "value": 12.834094295757389,
+            "angle": 37.45
+          },
+          "bridgeDeflection": {
+            "value": 0.012984874733240379,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 3.6366183287279723,
+            "angle": 37.45
+          },
+          "verticalLock": {
+            "value": 53.62642466220012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 3,
+            "angle": 37.45,
+            "thickness": 50,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 3.9046472012669375,
+            "serviceVerticalN": 38.30458904442866,
+            "designVerticalN": 76.60917808885732,
+            "totalServiceMomentNmm": 2640.5821355456897,
+            "totalDesignMomentNmm": 5281.164271091379,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 22.16904690512425,
+            "designStress": 44.3380938102485,
+            "serviceDeflection": 0.1840587291189861,
+            "designDeflection": 0.3681174582379722,
+            "yieldMargin": 5.412952596183225,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 26.81321233110006,
+            "designAxialN": 53.62642466220012,
+            "momentNmm": 1848.4074948819825,
+            "designMomentNmm": 3696.814989763965,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 1.4369636940301467,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 6.417047147878694,
+            "designStress": 12.834094295757389,
+            "serviceDeflection": 0.012984874733240379,
+            "designDeflection": 0.025969749466480757,
+            "yieldMargin": 18.700189859080094,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 2.703470145142499,
+            "designBendingStress": 5.406940290284998,
+            "serviceTorsionShear": 3.3600467889808368,
+            "designTorsionShear": 6.7200935779616735,
+            "serviceTwistDegrees": 0.11279626089447957,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 2.8098670579719838,
+              "designStress": 5.6197341159439675,
+              "serviceDeflection": 0.020215667353937615,
+              "designDeflection": 0.04043133470787523,
+              "yieldMargin": 42.70664680008376,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 1.3562523090657908,
+              "designStress": 2.7125046181315815,
+              "serviceDeflection": 0.0006366094232454887,
+              "designDeflection": 0.0012732188464909774,
+              "yieldMargin": 88.4791120338501,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 29.43
+          },
+          "joints": {
+            "requiredVerticalLockN": 53.62642466220012,
+            "requiredAngleLockNm": 3.6366183287279723,
+            "requiredTotalAngleLockNm": 5.195169041039961,
+            "sleeveContactCoupleN": 30.30176221118004,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.24369151517193,
+            "bookComZ": 243.2148195260217,
+            "bookOnlyFrontMarginMm": 38.75630848482807,
+            "bookOnlyBackMarginMm": 167.24369151517192,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 4,
+        "thickness": 50,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 55.91412657156598,
+            "angle": 38.53
+          },
+          "postDeflection": {
+            "value": 0.2321314746501646,
+            "angle": 38.53
+          },
+          "bridgeStress": {
+            "value": 16.17457840275645,
+            "angle": 38.53
+          },
+          "bridgeDeflection": {
+            "value": 0.01631036716928612,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 4.5860021465135095,
+            "angle": 38.53
+          },
+          "verticalLock": {
+            "value": 67.36042466220012,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 4,
+            "angle": 38.53,
+            "thickness": 50,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 4.904647201266937,
+            "serviceVerticalN": 48.114589044428655,
+            "designVerticalN": 96.22917808885731,
+            "totalServiceMomentNmm": 3330.25349024793,
+            "totalDesignMomentNmm": 6660.50698049586,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 27.95706328578299,
+            "designStress": 55.91412657156598,
+            "serviceDeflection": 0.2321314746501646,
+            "designDeflection": 0.4642629493003292,
+            "yieldMargin": 4.292296325022937,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 33.68021233110006,
+            "designAxialN": 67.36042466220012,
+            "momentNmm": 2331.1774431735507,
+            "designMomentNmm": 4662.3548863471015,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 1.8122721096174181,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 8.087289201378224,
+            "designStress": 16.17457840275645,
+            "serviceDeflection": 0.01631036716928612,
+            "designDeflection": 0.03262073433857224,
+            "yieldMargin": 14.83809927058745,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 3.3958425941220907,
+            "designBendingStress": 6.791685188244181,
+            "serviceTorsionShear": 4.237629042388168,
+            "designTorsionShear": 8.475258084776335,
+            "serviceTwistDegrees": 0.1422565639879741,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 3.6682417567878796,
+              "designStress": 7.336483513575759,
+              "serviceDeflection": 0.026264925846324894,
+              "designDeflection": 0.05252985169264979,
+              "yieldMargin": 32.7132201082294,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 1.8070635782064157,
+              "designStress": 3.6141271564128314,
+              "serviceDeflection": 0.0008480662724184711,
+              "designDeflection": 0.0016961325448369422,
+              "yieldMargin": 66.40607527439897,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 39.24
+          },
+          "joints": {
+            "requiredVerticalLockN": 67.36042466220012,
+            "requiredAngleLockNm": 4.5860021465135095,
+            "requiredTotalAngleLockNm": 6.551431637876442,
+            "sleeveContactCoupleN": 38.2160236585828,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.3501868121205,
+            "bookComZ": 241.91188865742382,
+            "bookOnlyFrontMarginMm": 38.6498131878795,
+            "bookOnlyBackMarginMm": 167.3501868121205,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      },
+      {
+        "bookMass": 5,
+        "thickness": 50,
+        "variant": "original",
+        "max": {
+          "postStress": {
+            "value": 67.50279716801809,
+            "angle": 39.24
+          },
+          "postDeflection": {
+            "value": 0.2802576950620738,
+            "angle": 39.24
+          },
+          "bridgeStress": {
+            "value": 19.518158285046212,
+            "angle": 39.24
+          },
+          "bridgeDeflection": {
+            "value": 0.019635859605331863,
+            "angle": 30
+          },
+          "hingeTorque": {
+            "value": 5.5364600059465525,
+            "angle": 39.24
+          },
+          "verticalLock": {
+            "value": 81.09442466220011,
+            "angle": 30
+          }
+        },
+        "atWorstPost": {
+          "inputs": {
+            "bookMass": 5,
+            "angle": 39.24,
+            "thickness": 50,
+            "variant": "original",
+            "extraMass": 0.1
+          },
+          "material": {
+            "E": 68300,
+            "yieldMPa": 240,
+            "density": 2700
+          },
+          "loads": {
+            "movingMassKg": 0.8046472012669376,
+            "totalStandMassKg": 5.904647201266937,
+            "serviceVerticalN": 57.92458904442866,
+            "designVerticalN": 115.84917808885731,
+            "totalServiceMomentNmm": 4020.6920175555333,
+            "totalDesignMomentNmm": 8041.384035111067,
+            "heavyShare": 0.7
+          },
+          "post": {
+            "serviceStress": 33.751398584009046,
+            "designStress": 67.50279716801809,
+            "serviceDeflection": 0.2802576950620738,
+            "designDeflection": 0.5605153901241476,
+            "yieldMargin": 3.555408221123446,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "axialN": 40.547212331100056,
+            "designAxialN": 81.09442466220011,
+            "momentNmm": 2814.484412288873,
+            "designMomentNmm": 5628.968824577746,
+            "A": 63.909980000000004,
+            "I": 339.94482,
+            "Z": 84.986205,
+            "eulerLoadN": 12389.422410048002,
+            "unrestrained190mmDeflection": 2.1879980085944775,
+            "metalMassKg": 0.0655641054
+          },
+          "bridge": {
+            "serviceStress": 9.759079142523106,
+            "designStress": 19.518158285046212,
+            "serviceDeflection": 0.019635859605331863,
+            "designDeflection": 0.039271719210663726,
+            "yieldMargin": 12.296242119517773,
+            "stressWithinYield": true,
+            "serviceDeflectionWithinTarget": true,
+            "serviceBendingStress": 4.088215043101683,
+            "designBendingStress": 8.176430086203366,
+            "serviceTorsionShear": 5.116187495632095,
+            "designTorsionShear": 10.23237499126419,
+            "serviceTwistDegrees": 0.17174963796186685,
+            "I": 4116,
+            "Z": 588,
+            "J": 8671.547968517612,
+            "metalMassKg": 0.1279152
+          },
+          "deck": {
+            "tee": {
+              "serviceStress": 4.526616455603775,
+              "designStress": 9.05323291120755,
+              "serviceDeflection": 0.032314184338712165,
+              "designDeflection": 0.06462836867742433,
+              "yieldMargin": 26.509866956243812,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 1737.1434666666667,
+              "Z": 434.28586666666666,
+              "centroidFromBottom": 4,
+              "spanMm": 152,
+              "flangeWidthMm": 40.7143
+            },
+            "skin": {
+              "serviceStress": 2.2578748473470407,
+              "designStress": 4.515749694694081,
+              "serviceDeflection": 0.0010595231215914534,
+              "designDeflection": 0.002119046243182907,
+              "yieldMargin": 53.14732131455279,
+              "stressWithinYield": true,
+              "serviceDeflectionWithinTarget": true,
+              "I": 853.3333333333334,
+              "Z": 213.33333333333334,
+              "spanMm": 39.2143,
+              "stripWidthMm": 20
+            },
+            "metalMassKg": 0.546947532,
+            "serviceBookLoadN": 49.050000000000004
+          },
+          "joints": {
+            "requiredVerticalLockN": 81.09442466220011,
+            "requiredAngleLockNm": 5.5364600059465525,
+            "requiredTotalAngleLockNm": 7.9092285799236475,
+            "sleeveContactCoupleN": 46.1390887260471,
+            "description": "하중에서 계산한 요구량. 실제 브레이크/힌지의 제공 용량과 별개."
+          },
+          "stability": {
+            "bookComY": -36.406810080052274,
+            "bookComZ": 241.05433597177114,
+            "bookOnlyFrontMarginMm": 38.593189919947726,
+            "bookOnlyBackMarginMm": 167.40681008005228,
+            "description": "수직 책 하중 무게중심의 앞뒤 지지영역 위치만 확인. 완제품 전도 안전계수 아님."
+          },
+          "scope": [
+            "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+            "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+            "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+            "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+            "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+            "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+            "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+            "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+          ]
+        }
+      }
+    ],
+    "scope": [
+      "6061-T6, E=68.3 GPa, 항복강도 240 MPa를 적용한 선형 부재계산. 실제 합금·열처리·용접부 성능은 별도 확인.",
+      "수직 책 하중 3–5 kg. 독서대와 수평 보관 데크는 각각의 하중 사례이며 동시 적재를 의미하지 않음.",
+      "독서대는 책+모델 상부 금속 자중+추가 부속 0.10 kg, 좌우 70:30 분담. 추가 부속은 책 무게중심에 배치한 설계 가정.",
+      "설계하중계수 2는 프로젝트 가정이며 인증 규정이나 충격시험을 뜻하지 않음. 0.5 mm는 사용하중에서 지주 자체의 목표 변위.",
+      "지주 노출 길이 68 mm, 슬리브 상단에서 이상적 회전·병진 고정. 슬리브 유격/브레이크 눌림/접합 유연성/베이스 변형은 포함하지 않음.",
+      "브리지는 166 mm 단순지지 중앙에 전체 수직하중, 전체 편심 모멘트를 비틀림으로 적용하는 부재 비교 사례. 국부 연결부 응력은 제외.",
+      "데크는 한 T리브가 전체 책 하중을 중앙에서 받는 152 mm 단순지지보, 20 mm 폭 표피에 전체 하중이 집중되는 리브 사이 보로 각각 계산.",
+      "독서판, 트레이, 관절 접합, 실제 잠금 용량, 베이스 포켓, 완성품 전도·강도 시험이 미검증이므로 완제품 5 kg 허용하중을 확정하지 않음."
+    ]
+  }
+}

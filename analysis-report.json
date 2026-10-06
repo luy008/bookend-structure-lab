@@ -1,0 +1,61 @@
+{
+  "source": "V017 fixed organic bookend",
+  "material": {
+    "E": 70000,
+    "nu": 0.33,
+    "density": 2700
+  },
+  "load": {
+    "force": 10,
+    "height": 150,
+    "distribution": "Gaussian pressure band sigma 6 mm on x=-220 face"
+  },
+  "boundary": "all translations fixed below z=16 mm",
+  "meshModel": "actual silhouette, 4 mm main plate, 8 mm root pad; quadratic 10-node tetrahedra",
+  "stressReporting": "maximum volume-weighted nodal von Mises stress",
+  "runs": [
+    {
+      "nodes": 20020,
+      "elements": 11460,
+      "delta": 0.7425152059005411,
+      "vonMises": 12.243245615351158,
+      "interiorStress": 9.844691473850215,
+      "loadedDisplacement": 0.3160415737532499,
+      "reaction": [
+        -9.999999986778251,
+        1.4599687014893448e-09,
+        -9.555184421472518e-10
+      ],
+      "forceResidual": 2.6739271277271182e-08,
+      "volumeCm3": 76.24114354956,
+      "time": 5.9276628494262695,
+      "area": 16,
+      "layers": 2
+    },
+    {
+      "nodes": 37966,
+      "elements": 22536,
+      "delta": 0.7447129615999282,
+      "vonMises": 12.49262946095188,
+      "interiorStress": 9.952716914327933,
+      "loadedDisplacement": 0.3171631853542738,
+      "reaction": [
+        -9.999999989419262,
+        4.051181778930157e-09,
+        1.6778500810943342e-09
+      ],
+      "forceResidual": 3.3442664426525203e-08,
+      "volumeCm3": 76.24114354956001,
+      "time": 12.812558889389038,
+      "area": 8,
+      "layers": 2
+    }
+  ],
+  "benchmark": {
+    "FE": 0.07203532131766666,
+    "beamTheory": 0.07427455357142858,
+    "relativeDifference": 0.030148040561542966
+  },
+  "meshDisplacementChange": 0.002959879719529157,
+  "meshStressChange": 0.020369096025324662
+}
