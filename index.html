@@ -1,9 +1,100 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V017 · 가볍게, 단단하게</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23142132'/%3E%3Cpath d='M8 25Q5 4 16 5Q28 4 24 25ZM16 5V25' stroke='%2366ddd0' fill='none' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V017 · 가볍게, 단단하게</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23142132'/%3E%3Cpath d='M8 25Q5 4 16 5Q28 4 24 25ZM16 5V25' stroke='%2366ddd0' fill='none' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><meta name="description" content="V017 알루미늄 북엔드·독서대. 실제 Blender 3D와 경량화 계산, 슬라이딩·각도 고정 원리와 하중 전달을 살펴보세요."><style id="mechanism-styles">
+/* Movement & support: explanatory diagrams are separate from the product model. */
+.story-nav{display:flex;gap:10px;margin:-7px 0 24px;flex-wrap:wrap}.story-nav a{font-size:13px;text-decoration:none;color:var(--accent);padding:8px 13px;border:1px solid #ccdeda;border-radius:24px;background:#f8fbfa}.story-nav a:first-child{border-color:var(--line);color:#566979;background:#fff}.drawing-story-link{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 24px;background:#edf4f0;border-top:1px solid #dce8e1;color:#365e54;font-size:13px;text-decoration:none}.drawing-story-link strong{font-weight:600}.drawing-story-link span{white-space:nowrap}#product-view,#mechanism-story{scroll-margin-top:24px}.mechanism-story{margin-top:24px;border:1px solid #dce5e0;border-radius:14px;overflow:hidden;background:#fff}.mechanism-heading{padding:30px 28px 23px;display:flex;justify-content:space-between;gap:24px;align-items:end}.mechanism-heading h2{font-size:27px;line-height:1.3;letter-spacing:-1px}.mechanism-heading>p{max-width:300px;color:#65766f;font-size:13px;line-height:1.8;margin:0}.mechanism-tabs{display:flex;border-top:1px solid #e3ebe6;border-bottom:1px solid #e3ebe6;background:#f7f9f6;padding:0 20px}.mechanism-tabs button{flex:1;border:0;border-bottom:3px solid transparent;padding:17px 6px 14px;background:none;color:#75857d;font-size:14px;font-weight:600;white-space:nowrap}.mechanism-tabs button span{margin-right:8px;font-size:11px;letter-spacing:1px;font-weight:500}.mechanism-tabs button[aria-selected=true]{color:#176c68;border-bottom-color:#176c68}.mechanism-story [role=tabpanel]{padding:26px}.mechanism-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1fr);gap:26px;align-items:start}.mechanism-figure{margin:0;border-radius:12px;background:#f1f5ef;border:1px solid #e3eae0;padding:16px 14px 12px;overflow:hidden}.mechanism-figure figcaption{font-size:11px;letter-spacing:.3px;color:#607970;display:flex;gap:7px;align-items:center}.mechanism-dot{width:6px;height:6px;border:1px solid #648d7d;border-radius:50%;display:inline-block}.mechanism-figure svg{display:block;width:100%;height:auto;margin:10px 0}.mechanism-figure svg text{font:12px 'Segoe UI','Malgun Gothic',sans-serif;fill:#526d62}.mechanism-figure svg .diagram-main-label{font-size:14px;font-weight:600}.mechanism-pad{transition:transform .35s ease}.mechanism-figure[data-state=released] .mechanism-pad{transform:translateY(-16px)}.released-only{display:none}.mechanism-figure[data-state=released] .clamped-only{display:none}.mechanism-figure[data-state=released] .released-only{display:inline}.mechanism-figure[data-state=released] .hinge-contact{stroke:#adbbb4;stroke-width:2;stroke-dasharray:4 4}.principle-controls{display:flex;flex-direction:column;align-items:center;gap:9px}.principle-controls button{font-size:12px;font-weight:650;border:1px solid #9bb6a9;background:#fff;border-radius:20px;padding:8px 20px;color:#176c68;min-height:36px}.principle-controls button[aria-pressed=true]{background:#176c68;border-color:#176c68;color:white}.principle-controls>span{font-size:12px;color:#4e7062;text-align:center}.diagram-caption{font-size:10px;text-align:center;color:#74857b;margin:12px 0 0;line-height:1.6}.mechanism-kicker{font-size:10px;color:#7c9184;letter-spacing:1.4px;font-weight:700}.mechanism-copy h3,.mechanism-load-intro h3{font-size:22px;line-height:1.45;margin:8px 0 13px;letter-spacing:-.7px}.mechanism-copy>p,.mechanism-options p{font-size:13px;line-height:1.8;color:#64736d;margin:10px 0}.mechanism-equation{margin:16px 0;padding:13px 15px;border-left:2px solid #9abcab;background:#f7f9f5;border-radius:0 7px 7px 0}.mechanism-equation b{display:block;font-size:15px;font-weight:600;color:#2b6257}.mechanism-equation span{display:block;font-size:11px;color:#7a8b80;margin-top:3px}.mechanism-evidence{margin-top:17px;padding-top:5px;border-top:1px solid #e6ece7}.mechanism-evidence p{display:flex;gap:9px;align-items:baseline;font-size:12px;color:#54665c;line-height:1.7;margin:9px 0}.evidence-built,.evidence-next{font-size:10px;font-weight:600;border-radius:4px;padding:3px 6px;flex-shrink:0;line-height:1.5}.evidence-built{color:#2b6e58;background:#e8f0e9}.evidence-next{color:#886a3f;background:#f5eee1;border:1px solid #e8dbc3}.mechanism-copy .mechanism-limit{font-size:11px;color:#8a795f}.mechanism-model-link{font-size:12px;background:none;border:0;border-bottom:1px solid #acc4b6;padding:7px 0;color:#176c68;font-weight:600;display:inline-flex;align-items:center;gap:14px;text-align:left;margin-top:5px}.mechanism-model-link:hover{color:#104d4a;border-color:#104d4a}.mechanism-options{display:grid;gap:10px;margin-top:15px}.mechanism-options>div{border-left:2px solid #d2ded4;padding-left:12px}.mechanism-options b{font-size:13px;font-weight:650;color:#3c6255}.mechanism-options p{margin:4px 0 0;font-size:12px}.mechanism-demand{display:grid;grid-template-columns:140px 1fr;gap:24px;padding:22px;margin-top:24px;background:#172e2a;color:#fff;border-radius:10px}.demand-label{font-size:10px;color:#acbfb3}.mechanism-demand strong{display:block;font-size:38px;font-weight:500;letter-spacing:-1px;line-height:1.2;margin-top:9px;font-variant-numeric:tabular-nums}.mechanism-demand strong small{font-size:16px;letter-spacing:0;color:#b6cbc0}.mechanism-demand h4{font-size:14px;font-weight:600;margin:1px 0 7px}.mechanism-demand p{color:#b6c8bf;font-size:12px;line-height:1.8;margin:0}.mechanism-demand b{color:#e6eee7;font-weight:600}.mechanism-demand details{margin-top:9px}.mechanism-demand summary{font-size:11px;color:#cbd9d0;cursor:pointer}.mechanism-demand details p{margin-top:7px;font-size:11px}.mechanism-sources{display:flex;gap:6px 16px;flex-wrap:wrap;font-size:10px;margin-top:16px;color:#8b988e}.mechanism-sources a{color:#668377;text-decoration:none;border-bottom:1px solid #d6e2d9}.mechanism-load-intro{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.mechanism-load-intro h3{margin-bottom:0}.mechanism-load-intro>p{font-size:13px;color:#65776b;line-height:1.8;margin:0}.mechanism-load-path{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:24px 0;padding:20px 10px;background:#f1f5ef;border-radius:10px;gap:14px}.mechanism-load-path li{position:relative;padding:0 6px}.mechanism-load-path li+li:before{content:'→';position:absolute;left:-15px;top:23px;color:#a4bba9;font-size:18px}.mechanism-load-path span{color:#9aab9c;font-size:10px;letter-spacing:1px}.mechanism-load-path b{display:block;font-size:12px;font-weight:600;color:#2b6051;margin:3px 0}.mechanism-load-path small{display:block;font-size:10px;line-height:1.6;color:#7c8e7f}.mechanism-structure-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.mechanism-structure-grid figure{margin:0;background:#f3f5f4;border-radius:10px;overflow:hidden}.mechanism-structure-grid img{display:block;width:100%;height:auto;aspect-ratio:1.5;object-fit:contain}.mechanism-structure-grid figcaption{font-size:10px;color:#7a877d;padding:12px 15px;text-align:center}.mechanism-structure-notes article+article{margin-top:15px;border-top:1px solid #e6ece7;padding-top:12px}.mechanism-structure-notes article>span{font-size:9px;letter-spacing:1px;color:#7f9686}.mechanism-structure-notes h4{font-size:13px;font-weight:600;line-height:1.6;margin:3px 0;color:#335e4c}.mechanism-structure-notes p{font-size:12px;line-height:1.8;color:#718176;margin:0}.mechanism-load-bottom{display:flex;justify-content:space-between;gap:16px;margin-top:22px;align-items:center}.mechanism-load-bottom p{font-size:11px;color:#889082;line-height:1.8;margin:0}.mechanism-stage{border-top:1px solid #e5ebe4;padding:15px 26px;background:#fafbf8;display:flex;flex-wrap:wrap;gap:5px 16px;align-items:center;font-size:10px;color:#758578}.mechanism-stage>span{display:inline-flex;align-items:center;gap:6px}.mechanism-stage i{display:inline-block;width:6px;height:6px;border-radius:50%}.stage-solid{background:#7b9d8b}.stage-outline{border:1px solid #b3996e}.mechanism-stage p{flex-basis:100%;margin:4px 0 0;color:#93a090}.control-context{font-size:12px;line-height:1.8;color:#768577;margin:14px 0 0;padding:10px 12px;background:#f4f7f1;border-radius:7px}.control-context a{color:#176c68;text-underline-offset:3px}.controls .control-context b{font-weight:600;color:#536e59}
+@media(min-width:781px) and (max-width:1100px){.mechanism-grid{grid-template-columns:1fr}.mechanism-figure{max-width:430px;width:100%;margin:auto}.mechanism-heading{align-items:start;flex-direction:column;gap:12px}.mechanism-load-path{grid-template-columns:1fr;gap:13px}.mechanism-load-path li{padding:0 18px;display:grid;grid-template-columns:25px 1fr 1fr;gap:8px;align-items:center}.mechanism-load-path li+li:before{display:none}.mechanism-structure-grid{grid-template-columns:1fr}.mechanism-load-bottom{flex-direction:column;align-items:start}}
+@media(max-width:600px){.story-nav{margin-bottom:20px}.story-nav a{font-size:12px;padding:7px 11px}.drawing-story-link{padding:12px 16px;font-size:11px;align-items:start;flex-direction:column;gap:5px}.mechanism-heading{padding:24px 20px 20px;flex-direction:column;align-items:start;gap:13px}.mechanism-heading h2{font-size:26px}.mechanism-heading>p{font-size:12px;max-width:none}.mechanism-tabs{padding:0 8px}.mechanism-tabs button{font-size:12px;padding:15px 3px 12px}.mechanism-tabs button span{margin-right:4px;font-size:10px}.mechanism-story [role=tabpanel]{padding:19px}.mechanism-grid{grid-template-columns:1fr;gap:23px}.mechanism-figure{max-width:440px;width:100%;margin:auto}.mechanism-copy h3,.mechanism-load-intro h3{font-size:23px}.mechanism-copy>p{font-size:14px}.mechanism-evidence p{font-size:12px}.mechanism-demand{grid-template-columns:1fr;gap:15px;padding:19px}.mechanism-demand strong{font-size:36px}.mechanism-demand strong small{font-size:17px}.mechanism-demand h4{font-size:14px}.mechanism-demand p{font-size:12px}.mechanism-load-intro{grid-template-columns:1fr;gap:15px}.mechanism-load-path{grid-template-columns:1fr;padding:19px;gap:22px}.mechanism-load-path li{display:grid;grid-template-columns:26px 1fr;column-gap:8px;align-items:center;padding:0}.mechanism-load-path li span{grid-row:1/3;font-size:12px}.mechanism-load-path li b{font-size:14px}.mechanism-load-path li small{grid-column:2;font-size:11px}.mechanism-load-path li+li:before{content:'↓';left:3px;top:-22px;font-size:13px}.mechanism-structure-grid{grid-template-columns:1fr;gap:20px}.mechanism-structure-notes h4{font-size:14px}.mechanism-structure-notes p{font-size:13px}.mechanism-load-bottom{flex-direction:column;align-items:start;gap:12px}.mechanism-stage{padding:14px 19px;font-size:10px;gap:7px 12px}.mechanism-sources{gap:7px;font-size:10px}.mechanism-sources>span{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.mechanism-pad{transition:none}}
+
+</style></head><body>
 <header><a href="#" class="brand"><span class="brand-icon">◧</span> STRUCTURE LAB</a><div class="header-right"><span>북엔드 × 독서대</span><b>V017</b></div></header>
 <main><div class="topline"><div><p class="eyebrow">PRODUCT ENGINEERING</p><h1>가볍게, 단단하게</h1></div><p class="source-tag">알루미늄 6061-T6 · 계산 조건 기반</p></div>
-<div class="workspace"><section class="design"><div class="drawing"><div class="drawing-head"><div><h2 id="part-name">고정 북엔드</h2><p id="part-sub"></p></div><div class="view-buttons"><button id="iso" aria-pressed="true">3D</button><button id="front" aria-pressed="false">정면</button><button id="side" aria-pressed="false">측면</button><button id="under" aria-pressed="false">하부</button><button id="reference" aria-pressed="false">원본</button></div></div>
+<nav class="story-nav" aria-label="제품 둘러보기"><a href="#product-view">제품 3D 살펴보기 ↗</a><a href="#mechanism-story">움직임과 고정 원리 ↓</a></nav><div class="workspace"><section class="design"><div class="drawing" id="product-view"><div class="drawing-head"><div><h2 id="part-name">고정 북엔드</h2><p id="part-sub"></p></div><div class="view-buttons"><button id="iso" aria-pressed="true">3D</button><button id="front" aria-pressed="false">정면</button><button id="side" aria-pressed="false">측면</button><button id="under" aria-pressed="false">하부</button><button id="reference" aria-pressed="false">원본</button></div></div>
 <div id="viewport"><canvas id="model-canvas" tabindex="0" aria-label="실제 제품 3D 모델. 드래그로 회전하고 스크롤로 확대할 수 있습니다."></canvas><img id="model-reference" src="blender-original.png" alt="제공한 Blender V017 제품의 원본 렌더" hidden><span class="canvas-tip" id="viewer-status" role="status">드래그 회전 · 스크롤 확대</span><div id="legend" hidden><span>0</span><div></div><span id="legend-max"></span></div><span id="deform-note" hidden>변형 표시 ×50</span></div>
-<div id="light-view-tools" class="analysis-tools"><span>형상</span><button id="light-original" aria-pressed="false">기존 설계</button><button id="light-candidate" aria-pressed="true">경량화 안</button><button id="light-explode" aria-pressed="false">분해 보기</button><button id="light-book" aria-pressed="true">책 표시</button></div><div id="analysis-tools" class="analysis-tools"><span>표시</span><button id="model" aria-pressed="true">원본 형상</button><button id="stress" aria-pressed="false">응력 분포</button><button id="deform" aria-pressed="false">휨 분포</button></div><div class="drawing-footer" id="condition"></div></div>
+<div id="light-view-tools" class="analysis-tools"><span>형상</span><button id="light-original" aria-pressed="false">기존 설계</button><button id="light-candidate" aria-pressed="true">경량화 안</button><button id="light-explode" aria-pressed="false">분해 보기</button><button id="light-book" aria-pressed="true">책 표시</button></div><div id="analysis-tools" class="analysis-tools"><span>표시</span><button id="model" aria-pressed="true">원본 형상</button><button id="stress" aria-pressed="false">응력 분포</button><button id="deform" aria-pressed="false">휨 분포</button></div><div class="drawing-footer" id="condition"></div><a class="drawing-story-link" href="#mechanism-story"><strong>슬라이딩은 무엇으로 멈추고, 각도는 어떻게 유지될까요?</strong><span>고정 원리 살펴보기 ↓</span></a></div>
+<section class="mechanism-story" id="mechanism-story" aria-labelledby="mechanism-title">
+  <div class="mechanism-heading">
+    <div><p class="eyebrow">MOVEMENT &amp; SUPPORT</p><h2 id="mechanism-title">움직임에는 여유를,<br>고정에는 이유를.</h2></div>
+    <p>어디로 움직이고, 무엇이 멈추게 할까요?<br>모델에 담긴 구조와 다음 설계 과제를 함께 살펴봅니다.</p>
+  </div>
+  <div class="mechanism-tabs" role="tablist" aria-label="고정 원리 살펴보기">
+    <button id="mechanism-tab-slide" data-mechanism-tab="slide" role="tab" aria-selected="true" aria-controls="mechanism-panel-slide"><span>01</span> 간격 조절</button>
+    <button id="mechanism-tab-angle" data-mechanism-tab="angle" role="tab" aria-selected="false" aria-controls="mechanism-panel-angle" tabindex="-1"><span>02</span> 각도 조절</button>
+    <button id="mechanism-tab-load" data-mechanism-tab="load" role="tab" aria-selected="false" aria-controls="mechanism-panel-load" tabindex="-1"><span>03</span> 하중 전달</button>
+  </div>
+  <div id="mechanism-panel-slide" role="tabpanel" aria-labelledby="mechanism-tab-slide" tabindex="0">
+    <div class="mechanism-grid">
+      <figure class="mechanism-figure" id="mechanism-figure-slide" data-state="clamped">
+        <figcaption><span class="mechanism-dot"></span> 압착 클램프 · 추가 설계안</figcaption>
+        <svg viewBox="0 0 400 278" role="img" aria-labelledby="slide-diagram-title slide-diagram-desc">
+          <title id="slide-diagram-title">레일과 압착 패드의 잠금 원리도</title><desc id="slide-diagram-desc">레버로 패드를 레일에 누르면 접촉면의 정지마찰이 수평 이동을 막습니다. 실제 제품의 단면도나 완성된 잠금장치를 뜻하지 않습니다.</desc>
+          <defs><marker id="slide-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#247e75"/></marker><marker id="slide-gray-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#657b8d"/></marker></defs>
+          <path d="M40 218H360" stroke="#d7e2df" stroke-width="1"/>
+          <path d="M45 164H355V182H45Z" fill="#b9c8c5" stroke="#708b85" stroke-width="1.5"/>
+          <path d="M170 182H230V204H170Z" fill="#b9c8c5" stroke="#708b85" stroke-width="1.5"/>
+          <path d="M129 160V120Q129 113 138 113H262Q271 113 271 120V194H242V184H258V126H142V184H158V194H129Z" fill="#e0e9e6" stroke="#637d77" stroke-width="2"/>
+          <g class="mechanism-pad"><path d="M200 86V148" stroke="#176c68" stroke-width="5"/><path d="M178 86H230L243 75" fill="none" stroke="#176c68" stroke-width="8" stroke-linecap="round"/><rect x="157" y="148" width="86" height="16" rx="3" fill="#2c8a7c"/></g>
+          <g class="clamped-only"><path d="M178 134V146M222 134V146" stroke="#247e75" stroke-width="2" marker-end="url(#slide-arrow)"/><path d="M155 166H245" stroke="#176c68" stroke-width="4"/><path d="M164 242H234" stroke="#247e75" stroke-width="2.5" marker-start="url(#slide-arrow)"/><text x="200" y="266" text-anchor="middle" fill="#176c68">마찰력 · 미끄러짐에 저항</text></g>
+          <g class="released-only"><path d="M160 238H240" stroke="#657b8d" stroke-width="2" marker-start="url(#slide-gray-arrow)" marker-end="url(#slide-gray-arrow)"/><text x="200" y="266" text-anchor="middle" fill="#536c7c">압착을 풀면 이동 가능</text></g>
+          <path d="M247 79H303" stroke="#8ba29b" fill="none"/><text x="309" y="84">조임부</text><path d="M91 174V145H56" stroke="#8ba29b" fill="none"/><text x="45" y="135">레일</text>
+          <text x="200" y="41" text-anchor="middle" class="diagram-main-label">누르는 힘이 고정력을 만듭니다</text>
+        </svg>
+        <div class="principle-controls"><button type="button" data-principle-toggle="slide" aria-pressed="true">제안 원리: 잠금</button><span id="mechanism-state-slide" role="status">패드 압착 → 마찰로 이동 저항</span></div>
+        <p class="diagram-caption">작동 원리도 · 형상 축약 · 버튼으로 잠금/해제 비교</p>
+      </figure>
+      <div class="mechanism-copy">
+        <span class="mechanism-kicker">SLIDE / STATIC FRICTION</span><h3>책 두께에 맞춘 위치에서,<br>레일을 눌러 멈추도록.</h3>
+        <p>T형 레일과 이를 감싸는 슈가 이동을 안내하고 들림을 막습니다. 이동 방향의 고정에는 별도의 압착 클램프가 필요합니다.</p>
+        <div class="mechanism-equation"><b>최대 마찰 고정력 ≈ μ × N</b><span>μ는 정지마찰계수, N은 접촉면을 누르는 힘</span></div>
+        <p>레버나 손잡이로 패드를 압착하면 정지마찰이 미끄러짐을 막습니다. 압착을 풀면 다시 움직여 원하는 간격에 맞출 수 있습니다.</p>
+        <div class="mechanism-evidence"><p><span class="evidence-built">모델에 반영</span>T 레일 · 포획형 슈 · 들림 방지 턱</p><p><span class="evidence-next">추가 설계</span>클램프 작동부 · 패드 재질 · 압착력</p></div>
+        <p class="mechanism-limit">수평 고정력은 아직 계산되지 않았습니다. 모델의 브레이크 외형은 높이 조절 지주용입니다.</p>
+        <button class="mechanism-model-link" data-model-target="slider">실제 3D에서 슬라이더 보기 <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+  </div>
+  <div id="mechanism-panel-angle" role="tabpanel" aria-labelledby="mechanism-tab-angle" tabindex="0" hidden>
+    <div class="mechanism-grid">
+      <figure class="mechanism-figure" id="mechanism-figure-angle" data-state="clamped">
+        <figcaption><span class="mechanism-dot"></span> 마찰 힌지 · 추가 설계안</figcaption>
+        <svg viewBox="0 0 400 278" role="img" aria-labelledby="angle-diagram-title angle-diagram-desc">
+          <title id="angle-diagram-title">힌지 마찰면 압착에 의한 각도 고정 원리도</title><desc id="angle-diagram-desc">책의 무게는 회전축 주위에 모멘트를 만듭니다. 마찰면을 압착하여 이 회전에 저항하는 토크를 만듭니다. 회전축만으로 각도가 잠기지는 않습니다.</desc>
+          <defs><marker id="angle-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#b97a45"/></marker><marker id="angle-green-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#247e75"/></marker></defs>
+          <path d="M60 239H347" stroke="#c8d8d2" stroke-width="2"/><path d="M260 131V233H283V131" fill="#d1ded9" stroke="#779389" stroke-width="2"/>
+          <path d="M95 218L295 94" stroke="#56786f" stroke-width="11" stroke-linecap="round"/>
+          <path d="M128 187L225 126L217 113L120 174Z" fill="#ead8bb" stroke="#b69973" stroke-width="1.5"/>
+          <path d="M160 81V143" stroke="#b97a45" stroke-width="2.5" marker-end="url(#angle-arrow)"/><text x="143" y="67" fill="#996438">책 무게</text>
+          <circle cx="270" cy="110" r="25" fill="#f3f7f4" stroke="#6a8a80" stroke-width="2"/><circle class="hinge-contact" cx="270" cy="110" r="17" fill="none" stroke="#247e75" stroke-width="6"/><circle cx="270" cy="110" r="5" fill="#59786e"/>
+          <path d="M237 72A50 50 0 0 0 224 137" fill="none" stroke="#b97a45" stroke-width="2" marker-end="url(#angle-arrow)"/>
+          <g class="clamped-only"><path d="M314 83A49 49 0 0 1 304 142" fill="none" stroke="#247e75" stroke-width="2.5" marker-end="url(#angle-green-arrow)"/><text x="320" y="111" fill="#176c68">잠금</text><text x="320" y="131" fill="#176c68">토크</text></g>
+          <g class="released-only"><text x="314" y="109" fill="#536c7c">회전</text><text x="314" y="129" fill="#536c7c">가능</text></g>
+          <text x="190" y="268" text-anchor="middle" class="diagram-main-label">책이 돌리려는 힘에 반대로 저항</text>
+        </svg>
+        <div class="principle-controls"><button type="button" data-principle-toggle="angle" aria-pressed="true">제안 원리: 잠금</button><span id="mechanism-state-angle" role="status">마찰면 압착 → 회전 저항</span></div>
+        <p class="diagram-caption">작동 원리도 · 형상 축약 · 실제 각도 잠금 용량은 미검증</p>
+      </figure>
+      <div class="mechanism-copy">
+        <span class="mechanism-kicker">TILT / RESISTING MOMENT</span><h3>회전축은 움직임을,<br>잠금부는 각도를 맡습니다.</h3>
+        <p>책의 무게는 독서판을 아래로 돌리려는 모멘트를 만듭니다. 축은 회전을 지지하고, 별도의 잠금부가 그 회전을 막아야 합니다.</p>
+        <div class="mechanism-options"><div><b>연속 각도 · 마찰 압착</b><p>조임 손잡이로 마찰면을 눌러 원하는 각도를 유지하는 제안입니다.</p></div><div><b>단계 각도 · 톱니 맞물림</b><p>톱니 접촉부가 회전력을 전달합니다. 조임부는 톱니가 벌어지지 않도록 유지하며, 정해진 간격으로 조절합니다.</p></div></div>
+        <div class="mechanism-evidence"><p><span class="evidence-built">모델에 반영</span>후면 회전축 · 축을 받치는 지지부</p><p><span class="evidence-next">추가 설계</span>마찰면·조임부 또는 톱니 잠금부</p></div>
+        <button class="mechanism-model-link" data-model-target="stand">실제 3D에서 회전부 보기 <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <div class="mechanism-demand">
+      <div><span class="demand-label">경량안 · 5 kg 설계 사례</span><strong>5.54 <small>N·m</small></strong></div>
+      <div><h4>한쪽 관절에 필요한 최대 잠금 모멘트</h4><p>하중이 큰 쪽 관절의 <b>요구량</b>입니다. 현재 장치가 제공하는 잠금 성능을 측정한 값이 아닙니다.</p><details><summary>이 수치에 적용한 조건</summary><p>책 높이 220 mm·두께 50 mm, 각도 30–75° 중 최대값, 좌우 70:30 분담, 하중계수 2. 경량안 상부 금속 자중과 추가 부속 0.10 kg을 포함합니다. 기존 부재 계산과 같은 이상적 지지조건을 사용합니다.</p></details></div>
+    </div>
+    <div class="mechanism-sources"><span>원리 참고</span><a href="https://www.norelemusa.com/en-us/Product-Overview/Systems-and-components-for-machine-and-plant-construction/27000/Functional-hinges/Hinges-aluminum-with-adjustable-friction/Hinges-aluminum-with-adjustable-friction-Style-B/p/agid.19944" target="_blank" rel="noopener noreferrer">norelem · 조절식 마찰 힌지 ↗</a><a href="https://www.elesa-ganter.com/en/CatalogoMediaServicesWWW/news/perfect-latching-www-news-20211014-143200" target="_blank" rel="noopener noreferrer">Elesa+Ganter · 톱니 잠금 관절 ↗</a></div>
+  </div>
+  <div id="mechanism-panel-load" role="tabpanel" aria-labelledby="mechanism-tab-load" tabindex="0" hidden>
+    <div class="mechanism-load-intro"><div><span class="mechanism-kicker">LOAD PATH / LIGHTWEIGHT STRUCTURE</span><h3>가벼운 부재들이,<br>하나의 지지 구조로.</h3></div><p>책의 하중은 판에서 관절, 지주를 거쳐 책상까지 전달됩니다. 이 경로의 연결부가 단단히 고정되어야 부재 계산의 지지조건에 가까워집니다.</p></div>
+    <ol class="mechanism-load-path" aria-label="독서대 하중 전달 순서"><li><span>01</span><b>책</b><small>무게에 의한 하중</small></li><li><span>02</span><b>독서판·받침</b><small>책을 받는 면</small></li><li><span>03</span><b>관절·가로 연결대</b><small>회전력과 하중 전달</small></li><li><span>04</span><b>지주·슬리브</b><small>압축·휨 저항</small></li><li><span>05</span><b>베이스 → 책상</b><small>바닥 지지 반력</small></li></ol>
+    <div class="mechanism-structure-grid"><figure><img src="lightweight-underside.png" loading="lazy" alt="경량화 제안 모델의 하부. 수평 보관판의 리브와 베이스의 포켓 형상." width="1800" height="1200"><figcaption>실제 경량화 제안 3D · 하부 구조</figcaption></figure><div class="mechanism-structure-notes"><article><span>01 / SECTION</span><h4>재료는 줄이고, 단면 높이는 유지</h4><p>지주와 가로 연결대는 속을 비우고 연결 끝부분은 채웁니다. 수평 보관판은 2 mm 표피와 2 × 6 mm 리브를 조합합니다.</p></article><article><span>02 / CONNECTION</span><h4>잠금과 접합이 지지조건을 완성</h4><p>계산은 지주가 슬리브에서 이상적으로 고정된다고 가정합니다. 실제 유격과 미끄러짐이 있으면 변형이 더 커질 수 있습니다.</p></article><article><span>03 / READING LEAF</span><h4>독서판은 4 mm 유지</h4><p>독서판의 휨과 잠금부의 미끄러짐은 다른 검토 항목입니다. 부재 계산만으로 완성품의 5 kg 지지를 확정하지 않습니다.</p></article></div></div>
+    <div class="mechanism-load-bottom"><p>수평 보관판 적재와 독서대 사용은 별도 하중 사례입니다.<br>관절·체결부·잠금 용량·베이스 포켓의 검증이 남아 있습니다.</p><button class="mechanism-model-link" data-model-target="lightweight">경량안 3D와 계산 보기 <span aria-hidden="true">↗</span></button></div>
+  </div>
+  <div class="mechanism-stage"><span><i class="stage-solid"></i> 모델에 반영된 형상</span><span><i class="stage-outline"></i> 추가 설계가 필요한 잠금 기구</span><p>형상 구현 · 잠금 요구량 계산 · 실제 유지 성능 검증을 구분합니다.</p></div>
+</section>
+
 <section id="light-results">
 <div class="result-heading"><span>경량화 안 · 계산한 부재의 결과</span><span id="light-current-load"></span></div>
 <div class="metrics light-metrics"><article><span>수정 부품 질량 감소</span><strong><b id="light-saving"></b><small>%</small></strong><p id="light-mass-detail"></p></article><article><span>지주 휨 · 사용 하중</span><strong><b id="light-delta"></b><small>mm</small></strong><p>70:30 편심 · 상부 자중 포함</p></article><article><span>지주 응력 · 설계 하중</span><strong><b id="light-stress"></b><small>MPa</small></strong><p>하중 계수 2.0 적용</p></article></div>
@@ -18,14 +109,109 @@
 <p class="section-label">목표 하중</p><div class="payload-buttons"><button id="payload-3">3 kg</button><button id="payload-4">4 kg</button><button id="payload-5" aria-pressed="true">5 kg</button></div>
 <div class="range-field"><label for="light-angle">독서면 각도 <output id="light-angle-value">55°</output></label><input id="light-angle" type="range" min="30" max="75" step="1" value="55"></div>
 <div class="range-field"><label for="light-thickness">책 두께 <output id="light-thickness-value">50 mm</output></label><input id="light-thickness" type="range" min="25" max="50" step="25" value="50"></div>
-<p class="small-note">책 높이 220 mm · 최대 70:30 편심 분담. 한 지주에 70%의 하중을 줍니다.</p>
+<p class="control-context">각도는 형상 미리보기입니다. <b>잠금장치는 상세 설계 전</b>이며, 아래 관절 요구량은 실제 잠금 용량과 다릅니다. <a href="#mechanism-story" data-mechanism-open="angle">고정 원리 보기</a></p><p class="small-note">책 높이 220 mm · 최대 70:30 편심 분담. 한 지주에 70%의 하중을 줍니다.</p>
 <dl class="specs"><div><dt>알루미늄 가정</dt><dd>6061-T6 · 비용접</dd></div><div><dt>탄성계수</dt><dd>68.3 GPa</dd></div><div><dt>비교 항복강도</dt><dd>240 MPa</dd></div><div><dt>하중 계수</dt><dd>2.0</dd></div><div><dt>사용 하중 휨 기준</dt><dd>0.5 mm</dd></div></dl>
 <p class="small-note" id="light-selfweight"></p>
 <div class="calculation-status" id="light-status"></div>
 <details class="method"><summary>경량 설계 계산식·출처</summary><p>지주: σ=N/A+Mc/I, δ=ML²/(2EI). 브리지: 단순지지 중앙집중 휨과 닫힌 사각관 비틀림. 데크: T형 보와 20 mm 폭 상판의 국부 휨. 지주 노출은 68 mm입니다.</p><p>얇은 벽의 국부 좌굴, 체결 구멍, 피로, 충격, 마찰 잠금 능력은 이 부재 계산에 포함하지 않습니다. 관절·슬리브 지지는 이상적인 고정으로 계산합니다.</p><p id="leaf-method">독서판 해석 확인 중.</p><a href="https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf">Hydro · 6061-T6 항복강도</a><br><a href="https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1006/Kaiser_Aluminum_Shapes_Soft_Alloy.pdf">Kaiser · 탄성계수</a><br><a href="https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/13534abb67b86d2fb8ee11a1f4f2b8c4_MIT3_11F99_bdisp.pdf">MIT · 보의 휨 수식</a></details>
 </section><section id="bookend-controls"><p class="section-label">원본 치수</p><dl class="specs"><div><dt>폭 × 높이</dt><dd>170.3 × 242.5 mm</dd></div><div><dt>곡선판 두께</dt><dd>4 mm</dd></div><div><dt>하부 보강 두께</dt><dd>8 mm</dd></div><div><dt>하부 보강 높이</dt><dd>35 mm</dd></div></dl><div class="range-field"><label for="force">책이 미는 힘 <output id="force-value">10 N</output></label><input id="force" type="range" min="1" max="30" step="1" value="10"><div class="range-ends"><span>1 N</span><span>30 N</span></div></div><p class="small-note">힘은 높이 150 mm의 접촉 구간에 분산됩니다.</p></section>
-<section id="stand-controls" hidden><p class="section-label">원본 치수</p><dl class="specs"><div><dt>독서판 한 장</dt><dd>168.3 × 238.9 × 4 mm</dd></div><div><dt>속지주 단면</dt><dd>8 × 8 mm · 실심</dd></div><div><dt>지주 노출</dt><dd>68 mm</dd></div><div><dt>관절 높이</dt><dd>236.9 mm</dd></div></dl><div class="range-field"><label for="bookMass">책 무게 <output id="bookMass-value"></output></label><input id="bookMass" type="range" min=".5" max="5" step=".1" value=".6"></div><div class="range-field"><label for="angle">독서면 각도 <output id="angle-value"></output></label><input id="angle" type="range" min="30" max="75" value="55"></div><p class="small-note">책 220 × 25 mm의 무게를 두 지주에 균등 분배합니다. 독서판·부속품 자중은 제외합니다.</p></section>
-<section id="slider-controls" hidden><p class="section-label">원본 치수</p><dl class="specs"><div><dt>레일</dt><dd>178 mm × 2개</dd></div><div><dt>T 플랜지</dt><dd>14 × 4 mm</dd></div><div><dt>슈 길이</dt><dd>28 mm</dd></div><div><dt>들림 방지 턱</dt><dd>6 × 3 mm</dd></div></dl><div class="range-field"><label for="gap">책 수납 간격 <output id="gap-value"></output></label><input id="gap" type="range" min="40" max="140" value="120"></div></section>
+<section id="stand-controls" hidden><p class="section-label">원본 치수</p><dl class="specs"><div><dt>독서판 한 장</dt><dd>168.3 × 238.9 × 4 mm</dd></div><div><dt>속지주 단면</dt><dd>8 × 8 mm · 실심</dd></div><div><dt>지주 노출</dt><dd>68 mm</dd></div><div><dt>관절 높이</dt><dd>236.9 mm</dd></div></dl><div class="range-field"><label for="bookMass">책 무게 <output id="bookMass-value"></output></label><input id="bookMass" type="range" min=".5" max="5" step=".1" value=".6"></div><div class="range-field"><label for="angle">독서면 각도 <output id="angle-value"></output></label><input id="angle" type="range" min="30" max="75" value="55"></div><p class="control-context">회전축 형상과 각도 변화 미리보기입니다. <b>각도 잠금장치는 상세 설계 전</b>입니다. <a href="#mechanism-story" data-mechanism-open="angle">고정 원리 보기</a></p><p class="small-note">책 220 × 25 mm의 무게를 두 지주에 균등 분배합니다. 독서판·부속품 자중은 제외합니다.</p></section>
+<section id="slider-controls" hidden><p class="section-label">원본 치수</p><dl class="specs"><div><dt>레일</dt><dd>178 mm × 2개</dd></div><div><dt>T 플랜지</dt><dd>14 × 4 mm</dd></div><div><dt>슈 길이</dt><dd>28 mm</dd></div><div><dt>들림 방지 턱</dt><dd>6 × 3 mm</dd></div></dl><div class="range-field"><label for="gap">책 수납 간격 <output id="gap-value"></output></label><input id="gap" type="range" min="40" max="140" value="120"></div><p class="control-context">책 두께에 맞춘 이동 범위 미리보기입니다. T 레일과 슈는 이동을 안내하고 들림을 막습니다. <b>수평 고정에는 별도 클램프가 필요</b>합니다. <a href="#mechanism-story" data-mechanism-open="slide">고정 원리 보기</a></p></section>
 <div class="material"><p class="section-label">해석에 사용할 물성</p><div class="range-field"><label for="E">탄성계수 E <output id="E-value">70 GPa</output></label><input id="E" type="range" min="40" max="210" value="70" step="5"></div><p class="small-note">등방성 선형 탄성 · ν 0.33<br>밀도 2,700 kg/m³</p></div><button class="primary" id="pin">현재 조건 저장</button><button class="secondary" id="download">결과 JSON 내려받기</button>
 <details class="method"><summary>계산 조건과 검증</summary><p>북엔드는 실제 곡선 외곽과 구멍, 4 mm 판과 8 mm 하부 보강을 반영한 3D 사면체 해석입니다. 베이스에 닿는 z ≤ 16 mm 구간을 고정하고, 높이 150 mm에 폭 방향으로 분산된 힘을 적용합니다.</p><p id="mesh-validation"></p><p>응력은 체적 가중 노드 평균 von Mises 최대값입니다. 하중과 E 변경은 동일 형상·지지조건의 선형 해석 결과를 비례 환산합니다. 독서대 결과는 실심 속지주 두 개의 압축·휨 계산이며 독서판과 관절 해석은 포함하지 않습니다.</p><p>이 결과는 표시한 재료·지지·하중 조건의 계산값입니다. 제품 전체의 허용 하중이나 파손 판정은 포함하지 않습니다.</p><a href="https://sosovski.github.io/Intro_FEM/notebooks/11_3d_elasticity.html">3D 선형 탄성 수식</a></details></aside></div></main>
-<footer><span>V017 · ORIGINAL GEOMETRY</span><span>형상 · 하중 · 결과</span></footer><script src="app.js"></script></body></html>
+<footer><span>V017 · ORIGINAL GEOMETRY</span><span>형상 · 하중 · 결과</span></footer><script src="app.js"></script><script id="mechanism-interactions">
+(() => {
+  'use strict';
+
+  const story = document.getElementById('mechanism-story');
+  if (!story) return;
+
+  const names = ['slide', 'angle', 'load'];
+  const tabs = names.map(name => story.querySelector(`[data-mechanism-tab="${name}"]`));
+  const panelFor = name => document.getElementById(`mechanism-panel-${name}`);
+
+  function selectTab(name, moveFocus = false) {
+    if (!names.includes(name)) return;
+    names.forEach((key, index) => {
+      const selected = key === name;
+      const tab = tabs[index];
+      if (tab) {
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      }
+      const panel = panelFor(key);
+      if (panel) panel.hidden = !selected;
+    });
+    if (moveFocus) tabs[names.indexOf(name)]?.focus();
+  }
+
+  tabs.forEach((tab, index) => {
+    if (!tab) return;
+    tab.addEventListener('click', () => selectTab(names[index]));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % names.length;
+      else if (event.key === 'ArrowLeft') next = (index + names.length - 1) % names.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = names.length - 1;
+      else return;
+      event.preventDefault();
+      selectTab(names[next], true);
+    });
+  });
+
+  document.querySelectorAll('[data-mechanism-open]').forEach(link => {
+    link.addEventListener('click', () => selectTab(link.dataset.mechanismOpen));
+  });
+
+  const stateText = {
+    slide: {
+      clamped: '패드 압착 → 마찰로 이동 저항',
+      released: '압착 해제 → 레일을 따라 이동',
+    },
+    angle: {
+      clamped: '마찰면 압착 → 회전 저항',
+      released: '압착 해제 → 각도 조절',
+    },
+  };
+
+  ['slide', 'angle'].forEach(name => {
+    const button = story.querySelector(`[data-principle-toggle="${name}"]`);
+    const figure = document.getElementById(`mechanism-figure-${name}`);
+    const status = document.getElementById(`mechanism-state-${name}`);
+    if (!button || !figure) return;
+
+    function setClamped(clamped) {
+      const state = clamped ? 'clamped' : 'released';
+      figure.dataset.state = state;
+      button.setAttribute('aria-pressed', String(clamped));
+      button.textContent = clamped ? '제안 원리: 잠금' : '제안 원리: 해제';
+      if (status) {
+        status.setAttribute('aria-live', 'polite');
+        status.textContent = stateText[name][state];
+      }
+    }
+
+    button.addEventListener('click', () => setClamped(figure.dataset.state !== 'clamped'));
+    setClamped(figure.dataset.state === 'clamped');
+  });
+
+  story.querySelectorAll('[data-model-target]').forEach(button => {
+    button.addEventListener('click', () => {
+      const mode = button.dataset.modelTarget;
+      if (!['slider', 'stand', 'lightweight'].includes(mode)) return;
+      document.getElementById(`${mode}-tab`)?.click();
+      document.getElementById('iso')?.click();
+      const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+      document.getElementById('viewport')?.scrollIntoView({
+        behavior: reducedMotion ? 'auto' : 'smooth',
+        block: 'center',
+      });
+      document.getElementById('model-canvas')?.focus({ preventScroll: true });
+    });
+  });
+
+  selectTab('slide');
+})();
+
+</script></body></html>
